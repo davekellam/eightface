@@ -14,18 +14,23 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 	<meta name="viewport" content="width=device-width">
 	
-	<link rel="shortcut icon" href="/favicon.ico" />
-	<link rel="apple-touch-icon-precomposed" href="/images/eightface/logo.128.png"/>
+	<link rel="profile" href="http://gmpg.org/xfn/11">
+	<link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
+
 	<link rel="alternate" type="application/rss+xml" title="RSS" href="http://eightface.com/feed/" />
 	
+	<?php wp_head(); ?>
+
+	<link rel="stylesheet" href="/wp-content/themes/eightface/css/styles.css" media="screen" />
+
+	<link rel="shortcut icon" href="/favicon.ico" />
+	<link rel="apple-touch-icon-precomposed" href="/images/eightface/logo.128.png"/>
+
 	<script type="text/javascript" src="http://use.typekit.com/yjc3syb.js"></script>
 	<script type="text/javascript">try{Typekit.load();}catch(e){}</script>
-	
-	<?php wp_head(); ?>
-	<link rel="stylesheet" href="/wp-content/themes/eightface/css/styles.css" media="screen" />
 </head>
 
-<body>
+<body <?php body_class(); ?>>
 <div id="page">
 	<header>
 		<a href="/"><img src="/images/eightface/logo.png" alt="" class="logo"></a>
