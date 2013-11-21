@@ -37,13 +37,11 @@ header {
 	header img.logo { 
 		width: 96px; 
 		height: auto; 
+		margin-bottom: 20px;
 		}
 	
 	header h1 { 
 		font-size: 3em; /* 48/16 */
-		width: 75%;
-		float: right;
-		margin: 0;
 		line-height: 100%;
 		text-transform: uppercase;
 		letter-spacing: .01em;
@@ -53,7 +51,6 @@ header {
 
 	header nav {
 		position: relative;
-		display: inline;
 		}
 		header nav ul { padding-left: 0; margin: 0.25em 0; }
 		header nav ul li { 
