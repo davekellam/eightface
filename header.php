@@ -21,7 +21,7 @@
 	
 	<?php wp_head(); ?>
 
-	<link rel="stylesheet" href="/wp-content/themes/eightface/css/styles.css" media="screen" />
+	<link rel="stylesheet" href="/wp-content/themes/eightface/css/style.css" media="screen" />
 
 	<link rel="shortcut icon" href="/favicon.ico" />
 	<link rel="apple-touch-icon-precomposed" href="/images/eightface/logo.128.png"/>
