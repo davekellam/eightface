@@ -32,11 +32,11 @@ h1 a, h2 a, h3 a {
 header { 
 	width: 100%;
 	min-height: 128px;
+	text-align: center;
 	}
 	header img.logo { 
 		width: 96px; 
 		height: auto; 
-		float: left;
 		}
 	
 	header h1 { 
@@ -51,9 +51,7 @@ header {
 		header h1 a { color: black; }
 		header h1 a:hover { text-decoration: none; }
 
-	header nav { 
-		width: 75%; 
-		float: right;
+	header nav {
 		position: relative;
 		display: inline;
 		}

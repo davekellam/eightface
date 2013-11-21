@@ -9,7 +9,4 @@
 		<li><a href="http://github.com/davekellam" title="github - code.">github</a></li>
 		<li><a href="http://dribbble.com/davekellam" title="dribbble - design.">dribbble</a></li>
 	</ul>
-
-	<p>Eightface is a weblog by Dave Kellam. It's largely just a collection of links to things I find interesting, with some attempts at pithy commentary interspersed.</p>
-	
 </section>
