@@ -3,7 +3,7 @@
 
 	<footer>
 		<p>&copy;1998&ndash;2013 Dave Kellam &middot; 
-		<a href="mailto:dave@eightface.com"><em>dave@eightface.com</em></a> &middot; 
+		<a href="mailto:dave@eightface.com">dave@eightface.com</a> &middot; 
 		<a href="http://twitter.com/davekellam/">@davekellam</a></p>
 	</footer>
 
