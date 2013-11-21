@@ -36,7 +36,7 @@
 		<a href="/"><img src="/images/eightface/logo.png" alt="" class="logo"></a>
 		<h1><a href="/">Eightface</a></h1>
 
-		<p>A weblog by <a href="http://davekellam.com">Dave Kellam</a></p>
+		<p>by <a href="http://davekellam.com">Dave Kellam</a></p>
 		
 		<nav>
 			<ul>
