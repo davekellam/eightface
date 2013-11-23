@@ -27,7 +27,7 @@ Template Name: Archive
 				<li><a href="http://eightface.com/2013/08/">Aug</a></li>
 				<li><a href="http://eightface.com/2013/09/">Sep</a></li>
 				<li><a href="http://eightface.com/2013/10/">Oct</a></li>
-				<li class="no-archive">Nov</li>
+				<li><a href="http://eightface.com/2013/11/">Nov</a></li>
 				<li class="no-archive">Dec</li>
 			</ul>
 			<ul>
