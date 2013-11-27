@@ -26,6 +26,11 @@ h1 a, h2 a, h3 a {
 	color: black; 
 	}
 
+img {
+	max-width: 100%;
+	height: auto;
+}
+
 header { 
 	width: 100%;
 	text-align: center;
@@ -75,10 +80,6 @@ header {
 	}
 	#content article {
 		margin-bottom: 3em;
-		}
-	#content article img {
-		max-width: 100%;
-		height: auto;
 		}
 
 	.meta a { color: #999999; }

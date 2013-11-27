@@ -111,6 +111,8 @@ h1, h2, h3, h4 { font-family: "proxima-nova-extra-condensed-1","proxima-nova-ext
 
 h1 a, h2 a, h3 a { text-decoration: none; color: black; }
 
+img { max-width: 100%; height: auto; }
+
 header { width: 100%; text-align: center; }
 header img.logo { width: 96px; height: 96px; margin-bottom: 20px; }
 header h1 { font-size: 3em; /* 48/16 */ line-height: 100%; text-transform: uppercase; letter-spacing: .01em; margin: 0; }
@@ -126,8 +128,6 @@ header nav ul li:last-child { padding-right: 0; }
 #content { clear: both; margin-top: 4em; }
 
 #content article { margin-bottom: 3em; }
-
-#content article img { max-width: 100%; height: auto; }
 
 .meta a { color: #999999; }
 
