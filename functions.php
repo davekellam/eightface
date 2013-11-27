@@ -52,3 +52,31 @@ function ef_disable_default_dashboard_widgets() {
 	remove_meta_box('dashboard_secondary', 'dashboard', 'core');
 }
 add_action('admin_menu', 'ef_disable_default_dashboard_widgets');
+
+/**
+ * Filters wp_title to print a neat <title> tag based on what is being viewed.
+ */
+function ef_wp_title( $title, $sep ) {
+	global $page, $paged;
+
+	if ( is_feed() )
+		return $title;
+
+	elseif ( is_404() ) { $title = "404 Not Found &mdash;"; }
+	elseif ( is_search() ) { $title = "Search Results &mdash;"; }
+
+	// Add the blog name
+	$title .= get_bloginfo( 'name' );
+
+	// Add the blog description for the home/front page, if it's there
+	$site_description = get_bloginfo( 'description', 'display' );
+	if ( $site_description && ( is_home() || is_front_page() ) )
+		$title .= " &mdash;" . $site_description; // $sep $site_description";
+
+	// Add a page number if necessary:
+	if ( $paged >= 2 || $page >= 2 )
+		$title .= " $sep " . sprintf( __( 'Page %s', '_s' ), max( $paged, $page ) );
+
+	return $title;
+}
+add_filter( 'wp_title', 'ef_wp_title', 10, 2 );
