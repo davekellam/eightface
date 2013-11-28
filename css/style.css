@@ -128,6 +128,7 @@ header nav ul li:last-child { padding-right: 0; }
 #content { clear: both; margin-top: 4em; }
 
 #content article { margin-bottom: 3em; }
+#content article img { max-width: 100%; height: auto; }
 
 .meta a { color: #999999; }
 

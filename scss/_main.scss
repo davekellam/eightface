@@ -80,7 +80,11 @@ header {
 	}
 	#content article {
 		margin-bottom: 3em;
+		img {
+			max-width: 100%;
+			height: auto;
 		}
+	}
 
 	.meta a { color: #999999; }
 
