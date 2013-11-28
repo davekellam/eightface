@@ -66,7 +66,7 @@ function ef_wp_title( $title, $sep ) {
 	elseif ( is_search() ) { $title = "Search Results &mdash;"; }
 
 	// Add the blog name
-	$title .= get_bloginfo( 'name' );
+	$title .= " &mdash; " . get_bloginfo( 'name' );
 
 	// Add the blog description for the home/front page, if it's there
 	$site_description = get_bloginfo( 'description', 'display' );
@@ -79,4 +79,4 @@ function ef_wp_title( $title, $sep ) {
 
 	return $title;
 }
-add_filter( 'wp_title', 'ef_wp_title', 10, 2 );
+// add_filter( 'wp_title', 'ef_wp_title', 10, 2 );
