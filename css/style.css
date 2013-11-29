@@ -136,15 +136,8 @@ header nav ul li:last-child { padding-right: 0; }
 
 #pagination { margin-bottom: 1.5em; }
 
-#secondary { border-top: 1px solid #ccc; }
-
-#secondary ul { padding: 0; }
-
-#secondary ul li { padding-right: 1.65em; display: inline; }
-
-#secondary, footer { text-align: center; font-family: "proxima-nova-extra-condensed-1","proxima-nova-extra-condensed-2", sans-serif; }
-
-#secondary a, footer a { color: #999999; }
+footer { border-top: 1px solid black; text-align: center; }
+footer a { color: #999999; }
 
 #archive ul { padding: 0; margin: 0 0 .5em; }
 

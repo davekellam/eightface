@@ -2,9 +2,8 @@
 	</section>
 
 	<footer>
-		<p>&copy;1998&ndash;2013 Dave Kellam &middot; 
-		<a href="mailto:dave@eightface.com">dave@eightface.com</a> &middot; 
-		<a href="http://twitter.com/davekellam/">@davekellam</a></p>
+		<p>&copy;1998&ndash;2013 <a href="http://davekellam.com">Dave Kellam</a> &middot; 
+		<a href="mailto:dave@eightface.com">dave@eightface.com</a>
 	</footer>
 
 </div>

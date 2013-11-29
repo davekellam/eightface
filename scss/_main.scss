@@ -92,20 +92,12 @@ header {
 
 #pagination { margin-bottom: 1.5em; }
 
-#secondary {
-	border-top: 1px solid #ccc;
-	}
-	#secondary ul { padding: 0; }
-	#secondary ul li { 
-		padding-right: 1.65em;
-		display: inline; }
-
-#secondary, footer {
+footer {
+	border-top: 1px solid black;
 	text-align: center;
-	font-family: "proxima-nova-extra-condensed-1","proxima-nova-extra-condensed-2", sans-serif;
+	
+	a { color: #999999; }
 }
-
-#secondary a, footer a { color: #999999; }
 
 #archive ul { padding: 0; margin: 0 0 .5em; }
 #archive ul li { display: inline; padding: 0; }
