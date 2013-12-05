@@ -9,7 +9,7 @@ get_header(); ?>
 
 		<h1>Archive</h1>
 
-		<p>The archive spans more than twelve years. Over that time, a number of changes in blogging platforms and site layouts have led to a variety of different post types. As you go further back, there's an increased likelihood that you'll run into stale links and general weirdness. </p>
+		<p>The archive spans more than twelve years. Over that time, a number of changes in blogging platforms and site layouts have led to a variety of different post types. As you go further back, there's an increased likelihood that you'll run into stale links and general weirdness.</p>
 
 		<h2>Monthly Archive</h2>
 
@@ -27,7 +27,7 @@ get_header(); ?>
 				<li><a href="http://eightface.com/2013/09/">Sep</a></li>
 				<li><a href="http://eightface.com/2013/10/">Oct</a></li>
 				<li><a href="http://eightface.com/2013/11/">Nov</a></li>
-				<li class="no-archive">Dec</li>
+				<li><a href="http://eightface.com/2013/12/">Dec</a></li>
 			</ul>
 			<ul>
 				<li class="year">2012:</li> 
@@ -229,7 +229,7 @@ get_header(); ?>
 
 		<p>Most of the posts before 2007 are not tagged. Still, it gives you some idea of the popular topics around here.</p>
 
-		<p><?php wp_tag_cloud( 'smallest=12&largest=22&unit=px' ); ?></p>
+		<p><?php wp_tag_cloud( 'smallest=14&largest=24&unit=px' ); ?></p>
 
 	</section>
 
