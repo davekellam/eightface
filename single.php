@@ -34,7 +34,7 @@
 
 		<?php endwhile; endif; ?>
 		
-		<p>If you enjoyed this post, please <a href="/subscribe">subscribe</a>a>.</p>
+		<p>If you enjoyed this post, please <a href="/subscribe">subscribe</a>.</p>
 
 	</section>
 
