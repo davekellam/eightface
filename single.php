@@ -34,7 +34,7 @@
 
 		<?php endwhile; endif; ?>
 		
-		<p>If you enjoyed the post, subscribe to the <a href="http://eightface.com/feed/"><acronym>RSS</acronym>&nbsp;feed</a> or <a href="http://twitter.com/eightface">@eightface</a> for updates.</p>
+		<p>If you enjoyed this post, please <a href="/subscribe">subscribe</a>a>.</p>
 
 	</section>
 
