@@ -8,7 +8,7 @@
 				<div id="post-<?php the_ID(); ?>" class="post">
 					<h1><a href="<?php the_permalink() ?>" rel="bookmark" title="Permanent Link to <?php the_title(); ?>"><?php the_title(); ?></a></h1>
 					<?php the_excerpt() ?>
-					<p><?php the_time('F j, Y') ?><?php if ('open' == $post->comment_status || $post->comment_count > 0) : ?> &mdash; <?php comments_popup_link('0 Comments', '1 Comment', '% Comments'); ?><?php endif; ?></p>
+					<p><?php the_time('F j, Y') ?></p>
 				</div>
 			<?php endwhile; ?>
 
@@ -35,9 +35,9 @@
 
 			<p>My apologies, whatever you were looking for isn't here. You may have fallen victim to a typo, the page may have moved, or it never existed in the first place. Take your pick.</p>
 
-				<h2>Try Again?</h2>
+			<h2>Try Again?</h2>
 				
-				<?php get_search_form(); ?>
+			<?php get_search_form(); ?>
 		<?php endif; ?>		
 	</section>
 
