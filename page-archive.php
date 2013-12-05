@@ -2,9 +2,8 @@
 /*
 Template Name: Archive
 */
-?>
 
-<?php get_header(); ?>
+get_header(); ?>
 
 	<section id="primary">
 
@@ -230,7 +229,7 @@ Template Name: Archive
 
 		<p>Most of the posts before 2007 are not tagged. Still, it gives you some idea of the popular topics around here.</p>
 
-		<p><?php wp_tag_cloud('smallest=12&largest=22&unit=px'); ?></p>
+		<p><?php wp_tag_cloud( 'smallest=12&largest=22&unit=px' ); ?></p>
 
 	</section>
 
