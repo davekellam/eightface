@@ -95,26 +95,38 @@ header {
 footer {
 	border-top: 1px solid black;
 	text-align: center;
-	
+
 	a { color: #999999; }
 }
 
-#archive ul { padding: 0; margin: 0 0 .5em; }
-#archive ul li { display: inline; padding: 0; }
-#archive ul li.year { 
-	font-family: "proxima-nova-extra-condensed-1","proxima-nova-extra-condensed-2", sans-serif;
-	padding-right: .5em; 
-	width: 2em;
-	display: block;
-	float: left;
-}
+#archive ul { 
+	padding: 0; 
+	margin: 0 0 .5em; 
+	
+	li { 
+		display: inline; 
+		padding: 0; 
 
-li.no-archive { color: white; color: rgba(0,0,0,0); }
+		.year { 
+			font-family: "proxima-nova-extra-condensed-1","proxima-nova-extra-condensed-2", sans-serif;
+			padding-right: .5em; 
+			width: 2em;
+			display: block;
+			float: left;
+		}
+
+		&.no-archive { 
+			color: white; 
+			color: rgba(0,0,0,0); 
+		}
+	}
+}
 
 a { 
 	color: #c63417; 
 	text-decoration: none;
-	}
-	a:hover, a:focus { 
+
+	&:hover, &:focus { 
 		text-decoration: underline;
-		}
+	}
+}
