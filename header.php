@@ -40,9 +40,9 @@
 		
 		<nav>
 			<ul>
-				<li><a href="http://eightface.com/about/">About</a></li>
-				<li><a href="http://eightface.com/archive/">Archive</a></li>
-				<li><a href="http://eightface.com/subscribe/">Subscribe</a></li>
+				<li><a href="/about/">About</a></li>
+				<li><a href="/archive/">Archive</a></li>
+				<li><a href="/subscribe/">Subscribe</a></li>
 			</ul>
 		</nav>
 	</header>
