@@ -90,3 +90,22 @@ function ef_ie_html5_js() { ?>
         <![endif]-->
 <?php }
 add_action( 'wp_head', 'ef_ie_html5_js' );
+
+/**
+ * Add a fallback image for Open Graph if nothing is present
+ */
+function ef_custom_image( $media, $post_id, $args ) {
+    if ( empty( $media ) ) {
+        $permalink = get_permalink( $post_id );
+        $img_url = get_template_directory_uri() . '/img/logo.png';
+        $url = apply_filters( 'jetpack_photon_url', $img_url );
+     
+        return array( array(
+            'type'  => 'image',
+            'from'  => 'custom_fallback',
+            'src'   => esc_url( $url ),
+            'href'  => $permalink,
+        ) );
+    }
+}
+add_filter( 'jetpack_images_get_images', 'ef_custom_image', 10, 3 );
