@@ -125,10 +125,14 @@ function ef_og_home_image() {
  * Modify Jetpack's Open Graph Output
  */
 function ef_og_tweaks( $tags ) {
+	unset(  $tags['twitter:site' ] );
+
+	$tags['twitter:site'] = sprintf( '@%s', 'eightface' )
+
 	if( is_single() && $tags['twitter:card' ] === 'photo' )
 		unset(  $tags['twitter:card' ] );
 	if( is_single() )
-		$tags['twitter:creator']= sprintf( '@%s', '@eightface' );
+		$tags['twitter:creator']= sprintf( '@%s', 'davekellam' );
 
 	if( is_home() ){
 		$ef_og_home_img = get_template_directory_uri() . '/img/logo.png';
