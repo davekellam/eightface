@@ -127,7 +127,7 @@ function ef_og_home_image() {
 function ef_og_tweaks( $tags ) {
 	unset(  $tags['twitter:site' ] );
 
-	$tags['twitter:site'] = sprintf( '@%s', 'eightface' )
+	$tags['twitter:site'] = sprintf( '@%s', 'eightface' );
 
 	if( is_single() && $tags['twitter:card' ] === 'photo' )
 		unset(  $tags['twitter:card' ] );
