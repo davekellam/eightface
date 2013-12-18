@@ -109,3 +109,14 @@ function ef_custom_image( $media, $post_id, $args ) {
     }
 }
 add_filter( 'jetpack_images_get_images', 'ef_custom_image', 10, 3 );
+
+/**
+ * Add a an image for Open Graph on homepage
+ */
+function ef_og_home_image() {
+	$ef_og_home_img = get_template_directory_uri() . '/img/logo.png';
+	$ef_og_home_img_output = sprintf( '<meta property="og:image" content="%s" />', esc_url( $ef_og_home_img ) );
+	if ( is_home() )
+		echo $ef_og_home_img_output;
+}
+add_action( 'wp_head', 'ef_og_home_image' );
