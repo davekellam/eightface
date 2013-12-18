@@ -95,7 +95,7 @@ add_action( 'wp_head', 'ef_ie_html5_js' );
  * Add a fallback image for Open Graph if nothing is present
  */
 function ef_custom_image( $media, $post_id, $args ) {
-    if ( empty( $media ) ) {
+    if ( empty( $media ) || is_home() ) {
         $permalink = get_permalink( $post_id );
         $img_url = get_template_directory_uri() . '/img/logo.png';
         $url = apply_filters( 'jetpack_photon_url', $img_url );
@@ -119,4 +119,30 @@ function ef_og_home_image() {
 	if ( is_home() )
 		echo $ef_og_home_img_output;
 }
-add_action( 'wp_head', 'ef_og_home_image' );
+//add_action( 'wp_head', 'ef_og_home_image' );
+
+/**
+ * Modify Jetpack's Open Graph Output
+ */
+function ef_og_tweaks( $tags ) {
+	if( is_single() && $tags['twitter:card' ] === 'photo' )
+		unset(  $tags['twitter:card' ] );
+	if( is_single() )
+		$tags['twitter:creator']= sprintf( '@%s', '@eightface' );
+
+	if( is_home() ){
+		$ef_og_home_img = get_template_directory_uri() . '/img/logo.png';
+		
+		unset( $tags['og:image'] );
+		$tags['og:image'] = esc_url( $ef_og_home_img );
+
+		$tags['og:description'] = esc_attr( get_bloginfo( 'description' ) );
+		$tags['og:type'] = 'website';
+	}
+ 
+	if( is_single() )
+		$tags['article:publisher'] = 'https://www.facebook.com/eightface';
+ 
+	return $tags;
+}
+add_filter( 'jetpack_open_graph_tags', 'ef_og_tweaks' );
