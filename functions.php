@@ -84,11 +84,13 @@ function ef_wp_title( $title, $sep ) {
 /**
  * Add html5.js script to <head> conditionally for IE8 and under
  */
-function ef_ie_html5_js() { ?>
-        <!--[if lt IE 9]>
-        	<script src="<?php echo get_template_directory_uri(); ?>/js/html5.js" type="text/javascript"></script>
-        <![endif]-->
-<?php }
+function ef_ie_html5_js() {
+	$ie_script = '<!--[if lt IE 9]>' . "\n\t" .
+					'<script src="' . get_template_directory_uri() . '/js/html5.js" type="text/javascript"></script>' . "\n" .
+				'<![endif]-->' . "\n";
+
+	echo $ie_script;
+}
 add_action( 'wp_head', 'ef_ie_html5_js' );
 
 /**
