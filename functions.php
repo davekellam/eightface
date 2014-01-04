@@ -141,3 +141,17 @@ function ef_og_tweaks( $tags ) {
 	return $tags;
 }
 add_filter( 'jetpack_open_graph_tags', 'ef_og_tweaks' );
+
+/**
+ * Adds custom classes to the array of body classes.
+ */
+function ef_body_classes( $classes ) {
+	global $post;
+	foreach( $classes as &$str ){
+		if( strpos( $str, "page-id-" ) > -1 ){
+			$str = "page-" . $post->post_name;
+		}
+	}
+	return $classes;
+}
+add_filter( 'body_class', 'ef_body_classes' );
