@@ -6,6 +6,10 @@ _main.scss
 ===================================================================
 */
 
+@mixin font-sans {
+	font-family: "proxima-nova-extra-condensed-1", "proxima-nova-extra-condensed-2", sans-serif;
+}
+
 body {
 	font: 100%/1.5 "skolar-1","skolar-2", georgia, serif;
 	color: #111;
@@ -18,7 +22,7 @@ body {
 	}
 
 h1, h2, h3, h4 {
-	font-family: "proxima-nova-extra-condensed-1","proxima-nova-extra-condensed-2", sans-serif;
+	@include font-sans;
 	}
 
 h1 a, h2 a, h3 a { 
@@ -58,7 +62,7 @@ header {
 	nav {
 		position: relative;
 		margin-top: 20px;
-		font-family: "proxima-nova-extra-condensed-1","proxima-nova-extra-condensed-2", sans-serif;
+		@include font-sans;
 		ul { 
 			padding-left: 0; 
 			margin: 0.25em 0; 
@@ -88,6 +92,20 @@ header {
 
 	.meta a { color: #999999; }
 
+input { 
+	border: 1px solid black;
+	padding: 3px 10px;
+	background: #efefef;
+}
+
+input[type="submit"] {
+	@include font-sans;
+	background: black;
+	color: white;
+	border: 0;
+	padding: 5px 10px;
+}
+
 #primary h1 { margin: 0; }
 
 #pagination { margin-bottom: 1.5em; }
@@ -108,7 +126,7 @@ footer {
 		padding: 0 .35em 0 0; 
 
 		&.year { 
-			font-family: "proxima-nova-extra-condensed-1","proxima-nova-extra-condensed-2", sans-serif;
+			@include font-sans;
 			font-weight: bold;
 			color: #222;
 			padding-right: .5em; 

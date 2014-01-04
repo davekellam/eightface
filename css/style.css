@@ -107,7 +107,7 @@ body { font: 100%/1.5 "skolar-1","skolar-2", georgia, serif; color: #111; }
 
 #page { margin: 3em auto; width: 90%; max-width: 640px; }
 
-h1, h2, h3, h4 { font-family: "proxima-nova-extra-condensed-1","proxima-nova-extra-condensed-2", sans-serif; }
+h1, h2, h3, h4 { font-family: "proxima-nova-extra-condensed-1", "proxima-nova-extra-condensed-2", sans-serif; }
 
 h1 a, h2 a, h3 a { text-decoration: none; color: black; }
 
@@ -119,7 +119,7 @@ header h1 { font-size: 3em; /* 48/16 */ line-height: 100%; text-transform: upper
 header h1 a { color: black; }
 header h1 a:hover { text-decoration: none; }
 header p { margin: 0; }
-header nav { position: relative; margin-top: 20px; font-family: "proxima-nova-extra-condensed-1","proxima-nova-extra-condensed-2", sans-serif; }
+header nav { position: relative; margin-top: 20px; font-family: "proxima-nova-extra-condensed-1", "proxima-nova-extra-condensed-2", sans-serif; }
 header nav ul { padding-left: 0; margin: 0.25em 0; }
 header nav ul li { display: inline; padding-right: 20px; text-transform: uppercase; letter-spacing: 0.1em; }
 header nav ul li a { color: #999999; }
@@ -132,6 +132,10 @@ header nav ul li:last-child { padding-right: 0; }
 
 .meta a { color: #999999; }
 
+input { border: 1px solid black; padding: 3px 10px; background: #efefef; }
+
+input[type="submit"] { font-family: "proxima-nova-extra-condensed-1", "proxima-nova-extra-condensed-2", sans-serif; background: black; color: white; border: 0; padding: 5px 10px; }
+
 #primary h1 { margin: 0; }
 
 #pagination { margin-bottom: 1.5em; }
@@ -141,7 +145,7 @@ footer a { color: #999999; }
 
 #archive ul { padding: 0; margin: 0 0 .7em; }
 #archive ul li { display: inline; padding: 0 .35em 0 0; }
-#archive ul li.year { font-family: "proxima-nova-extra-condensed-1","proxima-nova-extra-condensed-2", sans-serif; font-weight: bold; color: #222; padding-right: .5em; width: 40px; display: block; float: left; }
+#archive ul li.year { font-family: "proxima-nova-extra-condensed-1", "proxima-nova-extra-condensed-2", sans-serif; font-weight: bold; color: #222; padding-right: .5em; width: 40px; display: block; float: left; }
 #archive ul li.no-archive { color: white; color: rgba(0, 0, 0, 0); }
 
 a { color: #c63417; text-decoration: none; }
