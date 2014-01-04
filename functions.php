@@ -147,10 +147,12 @@ add_filter( 'jetpack_open_graph_tags', 'ef_og_tweaks' );
  */
 function ef_body_classes( $classes ) {
 	global $post;
-	foreach( $classes as &$str ){
+	foreach ( $classes as &$str ) {
+
 		if( strpos( $str, "page-id-" ) > -1 ){
 			$str = "page-" . $post->post_name;
 		}
+		
 	}
 	return $classes;
 }
