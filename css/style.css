@@ -139,9 +139,9 @@ header nav ul li:last-child { padding-right: 0; }
 footer { border-top: 1px solid black; text-align: center; }
 footer a { color: #999999; }
 
-#archive ul { padding: 0; margin: 0 0 .5em; }
-#archive ul li { display: inline; padding: 0; }
-#archive ul li .year { font-family: "proxima-nova-extra-condensed-1","proxima-nova-extra-condensed-2", sans-serif; padding-right: .5em; width: 2em; display: block; float: left; }
+#archive ul { padding: 0; margin: 0 0 .7em; }
+#archive ul li { display: inline; padding: 0 .35em 0 0; }
+#archive ul li.year { font-family: "proxima-nova-extra-condensed-1","proxima-nova-extra-condensed-2", sans-serif; font-weight: bold; color: #222; padding-right: .5em; width: 40px; display: block; float: left; }
 #archive ul li.no-archive { color: white; color: rgba(0, 0, 0, 0); }
 
 a { color: #c63417; text-decoration: none; }
