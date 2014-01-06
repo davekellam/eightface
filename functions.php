@@ -65,16 +65,17 @@ function ef_wp_title( $title, $sep ) {
 	if ( is_feed() )
 		return $title;
 
-	elseif ( is_404() ) { $title = "404 Not Found &mdash;"; }
-	elseif ( is_search() ) { $title = "Search Results &mdash;"; }
+	elseif ( is_404() ) { $title = "404 Not Found"; }
+	elseif ( is_search() ) { $title = "Search Results"; }
 
 	// Add the blog name
-	$title .= " &mdash; " . get_bloginfo( 'name' );
+	$title .= get_bloginfo( 'name' );
 
 	// Add the blog description for the home/front page, if it's there
 	$site_description = get_bloginfo( 'description', 'display' );
+
 	if ( $site_description && ( is_home() || is_front_page() ) )
-		$title .= " &mdash;" . $site_description; // $sep $site_description";
+		$title .= $site_description; // $sep $site_description";
 
 	// Add a page number if necessary:
 	if ( $paged >= 2 || $page >= 2 )
@@ -82,7 +83,7 @@ function ef_wp_title( $title, $sep ) {
 
 	return $title;
 }
-// add_filter( 'wp_title', 'ef_wp_title', 10, 2 );
+add_filter( 'wp_title', 'ef_wp_title', 10, 2 );
 
 /**
  * Add html5.js script to <head> conditionally for IE8 and under

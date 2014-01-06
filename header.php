@@ -4,10 +4,7 @@
 
 <head>
 	<meta charset="<?php bloginfo('charset'); ?>" />
-	<title><?php if (is_home()) { echo "Eightface"; } 
-	 			elseif (is_404()) { echo "404 Not Found &mdash; Eightface"; }
-	 			elseif (is_search()) { echo "Search Results &mdash; Eightface"; }
-	 			else { wp_title(''); echo " &mdash; Eightface"; } ?></title>
+	<title><?php wp_title( '&mdash;', true, 'right' );; ?></title>
 	
 	<meta name="description" content="This is Eightface, a weblog by Dave Kellam." />
 	<meta name="author" content="Dave Kellam">
