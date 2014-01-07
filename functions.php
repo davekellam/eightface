@@ -55,7 +55,7 @@ function ef_wp_title( $title, $sep ) {
 	$title .= get_bloginfo( 'name' );
 
 	// Add the blog description for the home/front page, if it's there
-	// $site_description = get_bloginfo( 'description', 'display' );
+	$site_description = ''; // get_bloginfo( 'description', 'display' );
 
 	if ( $site_description && ( is_home() || is_front_page() ) )
 		$title .= $site_description; // $sep $site_description";
