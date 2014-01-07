@@ -23,7 +23,7 @@
 	<link rel="shortcut icon" href="/favicon.ico" />
 	<link rel="apple-touch-icon-precomposed" href="/images/eightface/logo.128.png"/>
 
-	<script type="text/javascript" src="http://use.typekit.com/yjc3syb.js"></script>
+	<script type="text/javascript" src="http://use.typekit.net/yjc3syb.js"></script>
 	<script type="text/javascript">try{Typekit.load();}catch(e){}</script>
 </head>
 
