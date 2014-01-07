@@ -65,8 +65,8 @@ function ef_wp_title( $title, $sep ) {
 	if ( is_feed() )
 		return $title;
 
-	elseif ( is_404() ) { $title = "404 Not Found"; }
-	elseif ( is_search() ) { $title = "Search Results"; }
+	elseif ( is_404() ) { $title = "404 Not Found" . " $sep "; }
+	elseif ( is_search() ) { $title = "Search Results" . " $sep "; }
 
 	// Add the blog name
 	$title .= get_bloginfo( 'name' );
