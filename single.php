@@ -46,6 +46,4 @@ $post_year = get_the_time('Y');
 
 	</section>
 
-<?php get_sidebar(); ?>
-
 <?php get_footer(); ?> 
