@@ -40,23 +40,6 @@ function ef_move_media () {
 add_action( 'admin_menu', 'ef_move_media' );
 
 /**
- * Code for the front dashboard page
- *
- */
-function ef_disable_default_dashboard_widgets() {
-	//remove_meta_box( 'dashboard_right_now', 'dashboard', 'core' );
-	remove_meta_box( 'dashboard_recent_comments', 'dashboard', 'core' );
-	//remove_meta_box( 'dashboard_incoming_links', 'dashboard', 'core' );
-	remove_meta_box( 'dashboard_plugins', 'dashboard', 'core' );
-
-	remove_meta_box( 'dashboard_quick_press', 'dashboard', 'core' );
-	//remove_meta_box( 'dashboard_recent_drafts', 'dashboard', 'core' );
-	remove_meta_box( 'dashboard_primary', 'dashboard', 'core' );
-	remove_meta_box( 'dashboard_secondary', 'dashboard', 'core' );
-}
-add_action( 'admin_menu', 'ef_disable_default_dashboard_widgets' );
-
-/**
  * Filters wp_title to print a neat <title> tag based on what is being viewed.
  */
 function ef_wp_title( $title, $sep ) {
