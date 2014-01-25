@@ -150,3 +150,8 @@ a {
 		text-decoration: underline;
 	}
 }
+
+embed, iframe, object {
+	max-width: 100%;
+	height: auto;
+}
