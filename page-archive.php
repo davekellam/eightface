@@ -7,7 +7,7 @@ get_header(); ?>
 
 	<section id="primary">
 
-		<h>Archive</h1>
+		<h1>Archive</h1>
 
 		<p>The archive spans more than twelve years. Over that time, a number of changes in blogging platforms and site layouts have led to a variety of different post types. As you go further back, there's an increased likelihood that you'll run into stale links and general weirdness.</p>
 
@@ -17,6 +17,7 @@ get_header(); ?>
 			<ul>
 				<li class="year">2014:</li> 
 				<li><a href="http://eightface.com/2014/01/">Jan</a></li> 
+				<li><a href="http://eightface.com/2014/02/">Feb</a></li> 
 			</ul>
 			<ul>
 				<li class="year">2013:</li> 
