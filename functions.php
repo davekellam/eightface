@@ -15,6 +15,22 @@ remove_action( 'wp_head', 'start_post_rel_link' );
 remove_action( 'wp_head', 'adjacent_posts_rel_link_wp_head' ); 
 remove_action( 'wp_head', 'wp_generator' );
 
+function ef_setup() {
+
+	// add_theme_support( 'automatic-feed-links' );
+
+	// Enable Post Thumbnails
+	add_theme_support( 'post-thumbnails' );
+
+	// Enable support for Post Formats.
+	add_theme_support( 'post-formats', array( 'aside', 'image', 'video', 'quote', 'link' ) );
+
+	// Enable support for HTML5 markup.
+	add_theme_support( 'html5', array( 'search-form' ) );
+}
+add_action( 'after_setup_theme', 'ef_setup' );
+
+
 /**
  * Remove Jetpack cruft
  */
