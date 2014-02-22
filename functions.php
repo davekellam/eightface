@@ -23,7 +23,7 @@ function ef_setup() {
 	add_theme_support( 'post-thumbnails' );
 
 	// Enable support for Post Formats.
-	add_theme_support( 'post-formats', array( 'aside', 'image', 'video', 'quote', 'link' ) );
+	add_theme_support( 'post-formats', array( 'aside', 'link' ) );
 
 	// Enable support for HTML5 markup.
 	add_theme_support( 'html5', array( 'search-form' ) );
