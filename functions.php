@@ -97,6 +97,27 @@ function ef_ie_html5_js() {
 add_action( 'wp_head', 'ef_ie_html5_js' );
 
 /**
+ * Add stats tracking scripts
+ */
+function ef_stats_js() {
+	// TODO: Clean this up
+	$google = 	'<script>' . "\n\t" .
+					"(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){" . "\n\t" .
+					"(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o)," . "\n\t" .
+					"m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)" . "\n\t" .
+					"})(window,document,'script','//www.google-analytics.com/analytics.js','ga');" . "\n\n\t" .
+
+					"ga('create', 'UA-76978-1', 'eightface.com');" . "\n\t" .
+					"ga('send', 'pageview');" . "\n" .
+				'</script>' . "\n\n";
+
+	$mint = '<script type="text/javascript" src="http://eightface.com/mint/?js"></script>'. "\n";
+
+	echo $google . $mint;
+}
+add_action( 'wp_footer', 'ef_stats_js' );
+
+/**
  * Add a fallback image for Open Graph if nothing is present
  */
 function ef_custom_image( $media, $post_id, $args ) {
