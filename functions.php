@@ -181,3 +181,30 @@ function ef_body_classes( $classes ) {
 	return $classes;
 }
 add_filter( 'body_class', 'ef_body_classes' );
+
+/**
+ * Remove comment support from posts and pages
+ */
+function ef_remove_comment_support() {
+	remove_post_type_support( 'post', 'comments' );
+	remove_post_type_support( 'page', 'comments' );
+}
+add_action( 'init', 'ef_remove_comment_support' );
+
+/**
+ * Remove Feedback from the Admin menu sidebar
+ */
+function ef_admin_menu_tweaks() {
+	remove_menu_page( 'edit-comments.php' );
+}
+add_action( 'admin_menu', 'ef_admin_menu_tweaks' );
+
+/**
+ * Changes to the admin bar
+ */
+function ef_admin_bar_tweaks() {
+	global $wp_admin_bar;
+    
+	$wp_admin_bar->remove_menu('comments');
+}
+add_action( 'wp_before_admin_bar_render', 'ef_admin_bar_tweaks' );
