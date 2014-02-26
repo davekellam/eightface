@@ -155,3 +155,13 @@ embed, iframe, object {
 	max-width: 100%;
 	// height: auto;
 }
+
+// From Jetpack
+#subscribe-email input {
+	width: 95%;
+	padding: 1px 2px;
+}
+
+.comment-subscription-form .subscribe-label {
+	display: inline !important;
+}

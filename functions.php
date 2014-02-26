@@ -36,6 +36,7 @@ add_action( 'after_setup_theme', 'ef_setup' );
  */
 function remove_jetpack_styles() {
 	wp_deregister_style( 'jetpack-widgets' ); // Widgets
+	wp_deregister_style( 'jetpack-subscriptions' ); // Subscribe by email
 }
 add_action( 'wp_print_styles', 'remove_jetpack_styles' );
 
