@@ -103,16 +103,25 @@ add_action( 'wp_head', 'ef_ie_html5_js' );
 function ef_stats_js() {
 	// TODO: Clean this up
 	$google = 	'<script>' . "\n\t" .
-					"(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){" . "\n\t" .
-					"(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o)," . "\n\t" .
-					"m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)" . "\n\t" .
+					"(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){" . "\n\t\t" .
+						"(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o)," . "\n\t\t" .
+						"m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)" . "\n\t" .
 					"})(window,document,'script','//www.google-analytics.com/analytics.js','ga');" . "\n\n\t" .
 
 					"ga('create', 'UA-76978-1', 'eightface.com');" . "\n\t" .
 					"ga('send', 'pageview');" . "\n" .
 				'</script>' . "\n\n";
 
-	$mint = '<script type="text/javascript" src="http://eightface.com/mint/?js"></script>'. "\n";
+	$mint = 	"<script type='text/javascript'>" . "\n\t" .
+					"(function () {" . "\n\t\t" .
+						"var ma = document.createElement('script');" . "\n\t\t" .
+						"ma.type = 'text/javascript';" . "\n\t\t" .
+						"ma.src = '/mint/?js';" . "\n\t\t" .
+						"ma.async = true;" . "\n\t\t" .
+						"var s = document.getElementsByTagName('script')[0];" . "\n\t\t" .
+					"s.parentNode.insertBefore(ma, s);" . "\n\t" .
+					"})();" ."\n" .
+				"</script>"  . "\n\n";
 
 	echo $google . $mint;
 }
