@@ -168,3 +168,11 @@ embed, iframe, object {
 .comment-subscription-form .subscribe-label {
 	display: inline !important;
 }
+
+// Prevent TypeKit FOUT
+.wf-loading {
+	visibility: hidden;
+}
+.wf-active {
+	visibility: visible;
+}
