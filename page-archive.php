@@ -23,6 +23,11 @@ get_header(); ?>
 				<li><a href="http://eightface.com/2014/05/">May</a></li>
 				<li><a href="http://eightface.com/2014/06/">Jun</a></li>
 				<li><a href="http://eightface.com/2014/07/">Jul</a></li>
+				<li><a href="http://eightface.com/2014/08/">Aug</a></li>
+				<li><a href="http://eightface.com/2014/09/">Sep</a></li>
+				<li><a href="http://eightface.com/2014/10/">Oct</a></li>
+				<li><a href="http://eightface.com/2014/11/">Nov</a></li>
+				<li><a href="http://eightface.com/2014/12/">Dec</a></li>
 			</ul>
 			<ul>
 				<li class="year">2013:</li> 
