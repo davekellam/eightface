@@ -112,18 +112,7 @@ function ef_stats_js() {
 					"ga('send', 'pageview');" . "\n" .
 				'</script>' . "\n\n";
 
-	$mint = 	"<script type='text/javascript'>" . "\n\t" .
-					"(function () {" . "\n\t\t" .
-						"var ma = document.createElement('script');" . "\n\t\t" .
-						"ma.type = 'text/javascript';" . "\n\t\t" .
-						"ma.src = '/mint/?js';" . "\n\t\t" .
-						"ma.async = true;" . "\n\t\t" .
-						"var s = document.getElementsByTagName('script')[0];" . "\n\t\t" .
-					"s.parentNode.insertBefore(ma, s);" . "\n\t" .
-					"})();" ."\n" .
-				"</script>"  . "\n\n";
-
-	echo $google . $mint;
+	echo $google;
 }
 add_action( 'wp_footer', 'ef_stats_js' );
 
