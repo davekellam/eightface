@@ -15,6 +15,36 @@ get_header(); ?>
 
 		<section id="archive">
 			<ul>
+				<li class="year">2017:</li>
+				<li class="no-archive">Jan</li>
+				<li class="no-archive">Feb</li>
+				<li class="no-archive">Mar</li>
+				<li class="no-archive">Apr</li>
+				<li class="no-archive">May</li>
+				<li class="no-archive">Jun</li>
+				<li class="no-archive">Jul</li>
+				<li class="no-archive">Aug</li>
+				<li class="no-archive">Sep</li>
+				<li class="no-archive">Oct</li>
+				<li class="no-archive">Nov</li>
+				<li><a href="http://eightface.com/2014/12/">Dec</a></li>
+			</ul>	
+			<ul>
+				<li class="year">2015:</li> 
+				<li><a href="http://eightface.com/2015/01/">Jan</a></li>
+				<li><a href="http://eightface.com/2015/02/">Feb</a></li>
+				<li><a href="http://eightface.com/2015/03/">Mar</a></li>
+				<li><a href="http://eightface.com/2015/04/">Apr</a></li>
+				<li><a href="http://eightface.com/2015/05/">May</a></li>
+				<li><a href="http://eightface.com/2015/06/">Jun</a></li>
+				<li><a href="http://eightface.com/2015/07/">Jul</a></li>
+				<li><a href="http://eightface.com/2015/08/">Aug</a></li>
+				<li class="no-archive">Sep</li>
+				<li class="no-archive">Oct</li>
+				<li class="no-archive">Nov</li>
+				<li class="no-archive">Dec</li>
+			</ul>
+			<ul>
 				<li class="year">2014:</li> 
 				<li><a href="http://eightface.com/2014/01/">Jan</a></li>
 				<li><a href="http://eightface.com/2014/02/">Feb</a></li>
@@ -242,9 +272,7 @@ get_header(); ?>
 
 		<h2 class="clear">Top 50 Tags</h2>
 
-		<p>Most of the posts before 2007 are not tagged. Still, it gives you some idea of the popular topics around here.</p>
-
-		<p><?php wp_tag_cloud( 'smallest=14&largest=24&unit=px' ); ?></p>
+		<p><?php wp_tag_cloud( 'smallest=14&largest=24&unit=em' ); ?></p>
 
 	</section>
 
