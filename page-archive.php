@@ -272,7 +272,7 @@ get_header(); ?>
 
 		<h2 class="clear">Top 50 Tags</h2>
 
-		<p><?php wp_tag_cloud( 'smallest=14&largest=24&unit=em' ); ?></p>
+		<p><?php wp_tag_cloud( 'smallest=14&largest=24&unit=px' ); ?></p>
 
 	</section>
 
