@@ -7,10 +7,10 @@
 			
 			<?php the_content(); ?>	
 			
-			<aside class="meta">
-				<?php the_time('F jS') ?>
+			<div class="meta">
+				<span class="posted"><?php the_time( 'F j, Y' ) ?></span>
 				<?php if( get_the_tags() ) : ?>&middot; <?php the_tags( '', ' ' ); ?><?php endif; ?>
-			</aside>
+			</div>
 		</article>
  	
  	<?php endwhile; ?>
