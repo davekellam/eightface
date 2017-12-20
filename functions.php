@@ -46,6 +46,22 @@ function remove_jetpack_devicepx() {
 add_action( 'wp_enqueue_scripts', 'remove_jetpack_devicepx' );
 
 /**
+ * Never worry about cache again!
+ */
+function eightface_load_scripts() {
+ 
+    // create css versions based on file date
+    $css_ver = date( "ymdHi", filemtime( get_stylesheet_directory() . '/css/style.css' ) );
+     
+    // register stylesheets
+    wp_register_style( 'eightface', get_template_directory_uri() . '/css/style.css', false, $css_ver );
+	
+	wp_enqueue_style ( 'eightface' );
+ 
+}
+add_action( 'wp_enqueue_scripts', 'eightface_load_scripts' );
+
+/**
  * Move "Media" further down in the menus
  */
 function ef_move_media () {
