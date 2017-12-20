@@ -12,6 +12,8 @@ $post_year = get_the_time('Y');
 		<?php while ( have_posts() ) : the_post(); ?>
 
 			<article class="post single">
+				<?php the_post_thumbnail( 'large' ); ?>
+
 				<?php if ( in_category( 2 ) ) : ?>
 			
 					<?php if( $post_year >= 2005 ) : ?>
@@ -42,7 +44,7 @@ $post_year = get_the_time('Y');
 			<?php endwhile; ?>
 		<?php endif; ?>
 		
-		<p>If you enjoyed this post, please <a href="/subscribe">subscribe</a>.</p>
+		<p>If you enjoyed this post, please <a href="/subscribe/">subscribe</a>.</p>
 
 	</section>
 
