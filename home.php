@@ -3,9 +3,7 @@
 <section id="primary">	
 	<?php while ( have_posts() ) : the_post(); ?>	
 		<article>
-			<h1><a href="<?php the_permalink() ?>" title="<?php the_title(); ?> &mdash; <?php the_time('F j, Y') ?>"><?php the_title(); ?></a></h1> 
-			
-			<?php the_post_thumbnail( 'large' ); ?>
+			<h1><a href="<?php the_permalink() ?>" title="<?php the_title(); ?> &mdash; <?php the_time('F j, Y') ?>"><?php the_title(); ?></a></h1>
 
 			<?php the_content(); ?>	
 			

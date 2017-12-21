@@ -28,10 +28,8 @@ $post_year = get_the_time('Y');
 					<?php endif; ?>
 
 				<?php else : ?>
-				
+
 					<h1><?php the_title(); ?></h1>
-				
-					<?php the_post_thumbnail( 'large' ); ?>
 						
 					<?php the_content(); ?>
 

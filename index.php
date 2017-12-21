@@ -38,8 +38,6 @@ $the_day;
 		<article>
 			<h2><a href="<?php the_permalink() ?>" rel="bookmark" title="<?php the_title(); ?>"><?php the_title(); ?></a></h2>
 
-			<?php the_post_thumbnail( 'large' ); ?>
-
 			<?php the_content(); ?>
 		<?php endif; ?>
 
