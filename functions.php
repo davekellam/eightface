@@ -223,3 +223,12 @@ function ef_admin_bar_tweaks() {
 	$wp_admin_bar->remove_menu('comments');
 }
 add_action( 'wp_before_admin_bar_render', 'ef_admin_bar_tweaks' );
+
+/**
+ * Prevent taxonomy feeds from being generated
+ */
+function ef_remove_taxonomy_feeds() {
+  // return no data
+  return;
+}
+add_filter( 'category_feed_link' , 'ef_remove_taxonomy_feeds' );
