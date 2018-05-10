@@ -130,7 +130,7 @@ function ef_stats_js() {
 
 	echo $google;
 }
-add_action( 'wp_footer', 'ef_stats_js' );
+// add_action( 'wp_footer', 'ef_stats_js' );
 
 /**
  * Add a fallback image for Open Graph if nothing is present
